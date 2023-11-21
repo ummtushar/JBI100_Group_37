@@ -1,4 +1,4 @@
-# JBI100-example-app
+# JBI100-Group-37
 
 ## About this app
 
