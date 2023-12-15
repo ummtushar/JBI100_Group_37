@@ -7,18 +7,21 @@ import plotly.graph_objects as go
 from matplotlib import pyplot as plt
 import folium
 from folium import plugins
-<<<<<<< HEAD
+
+
 from plotly.offline import iplot
 import os
 import base64
 
 
-=======
+
 # from plotly.offline import init_notebook_mode, iplot
 import os
 import base64
 
->>>>>>> dc01464fd51ac7d26eab2c0c806f2e8b307a666a
+# from plotly.offline import init_notebook_mode, iplot
+import os
+import base64
 
 df = pd.read_csv('FIFA DataSet/Data/FIFA World Cup Penalty Shootouts/WorldCupShootouts.csv')
 
