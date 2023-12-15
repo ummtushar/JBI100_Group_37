@@ -1,0 +1,37 @@
+Index: Heatmap.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Heatmap.py b/penalty_shootouts.py
+rename from Heatmap.py
+rename to penalty_shootouts.py
+--- a/Heatmap.py	(revision 1181805e4f657397b811fedebbadbccb858577f4)
++++ b/penalty_shootouts.py	(date 1702635398063)
+@@ -8,19 +8,6 @@
+ import folium
+ from folium import plugins
+ 
+-
+-from plotly.offline import iplot
+-import os
+-import base64
+-
+-
+-
+-# from plotly.offline import init_notebook_mode, iplot
+-import os
+-import base64
+-
+-# from plotly.offline import init_notebook_mode, iplot
+-import os
+ import base64
+ 
+ df = pd.read_csv('FIFA DataSet/Data/FIFA World Cup Penalty Shootouts/WorldCupShootouts.csv')
+@@ -82,3 +69,6 @@
+ 
+ show_shots(df_zone, 'Zone_x', 'Zone_y', 'Number of Shots', 70, 'Zone', ['Zone', 'Number of Shots'], 'Number of Shots',
+            'Shot Location (On Target Shots)')
++
++
++
