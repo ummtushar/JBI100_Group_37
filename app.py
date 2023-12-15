@@ -2,10 +2,13 @@ from jbi100_app.main import app
 from jbi100_app.views.menu import make_menu_layout
 from jbi100_app.views.scatterplot import Scatterplot
 
-from dash import html
+from dash import html, Dash, dcc
+import pandas as pd
 import plotly.express as px
 from dash.dependencies import Input, Output
 
+
+# main dashboard 
 
 if __name__ == '__main__':
     # Create data

@@ -10,10 +10,10 @@ def generate_description_card():
     return html.Div(
         id="description-card",
         children=[
-            html.H5("Example dashboard"),
+            html.H5("Visualisation Project Group 37"),
             html.Div(
                 id="intro",
-                children="You can use this as a basic template for your JBI100 visualization project.",
+                children="This Dashboard helps coaches and players of the upcoming World Cup 2026.",
             ),
         ],
     )
