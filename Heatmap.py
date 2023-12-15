@@ -7,17 +7,23 @@ import plotly.graph_objects as go
 from matplotlib import pyplot as plt
 import folium
 from folium import plugins
-from plotly.offline import init_notebook_mode, iplot
+<<<<<<< HEAD
+from plotly.offline import iplot
 import os
 import base64
 
-init_notebook_mode()
+
+=======
+# from plotly.offline import init_notebook_mode, iplot
+import os
+import base64
+
+>>>>>>> dc01464fd51ac7d26eab2c0c806f2e8b307a666a
 
 df = pd.read_csv('FIFA DataSet/Data/FIFA World Cup Penalty Shootouts/WorldCupShootouts.csv')
 
 
 def show_shots(df, x, y, size, size_max, hover_name, hover_data, color, title):
-    init_notebook_mode()
     fig = px.scatter(df,
                      x=x,
                      y=y,
@@ -48,7 +54,7 @@ def show_shots(df, x, y, size, size_max, hover_name, hover_data, color, title):
                           yanchor="top",
                           sizing='stretch',
                           layer="below")])
-    iplot(fig)
+    fig.show()
 
 
 shot_coords = {
